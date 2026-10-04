@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 
 export default function Hero() {
   return (
-    <section className="relative flex flex-col items-center justify-center min-h-screen px-6 pt-24 text-center overflow-hidden">
+    <section className="relative isolate flex flex-col items-center justify-center min-h-screen px-6 pt-24 text-center overflow-hidden">
       <div
         aria-hidden="true"
         className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_30%,rgba(0,212,255,0.15),transparent_60%)]"

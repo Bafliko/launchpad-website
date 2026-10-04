@@ -10,4 +10,10 @@ describe('Hero', () => {
     ).toBeInTheDocument()
     expect(screen.getByRole('link', { name: /download for windows/i })).toBeInTheDocument()
   })
+
+  it('isolates its own stacking context so the negative-z glow renders above the page background', () => {
+    const { container } = render(<Hero />)
+    const section = container.querySelector('section')
+    expect(section.className).toContain('isolate')
+  })
 })
