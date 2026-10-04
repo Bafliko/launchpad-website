@@ -4,8 +4,8 @@ import App from './App'
 
 describe('App', () => {
   it('renders every section exactly once', () => {
-    const { container } = render(<App />)
-    expect(container.textContent).toContain('LaunchPad')
+    render(<App />)
+    expect(screen.getByRole('banner')).toHaveTextContent('LaunchPad')
     expect(
       screen.getByRole('heading', { name: /ultimate tool for everyday work/i })
     ).toBeInTheDocument()
