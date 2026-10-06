@@ -10,7 +10,7 @@ export default {
         accent: '#00d4ff',
       },
       fontFamily: {
-        sans: ['Outfit', 'system-ui', 'sans-serif'],
+        sans: ['Outfit', 'Heebo', 'system-ui', 'sans-serif'],
         mono: ['"JetBrains Mono"', 'monospace'],
       },
       boxShadow: {

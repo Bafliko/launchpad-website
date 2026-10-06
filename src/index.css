@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Outfit', system-ui, sans-serif;
+  font-family: 'Outfit', 'Heebo', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
 }

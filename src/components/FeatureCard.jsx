@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion'
 
+import { useLang } from '../i18n'
+
 export default function FeatureCard({ app }) {
+  const { lang } = useLang()
   return (
     <motion.div
       initial={{ opacity: 0, y: 24 }}
@@ -11,9 +14,9 @@ export default function FeatureCard({ app }) {
     >
       <img src={app.icon} alt="" className="h-10 w-10" />
       <h3 className="mt-4 font-semibold text-white">{app.name}</h3>
-      <p className="mt-2 text-sm text-white/60">{app.description}</p>
+      <p className="mt-2 text-sm text-white/60">{app.description[lang]}</p>
       <span className="mt-4 inline-block rounded-full bg-white/5 px-3 py-1 text-xs text-accent">
-        {app.tag}
+        {app.tag[lang]}
       </span>
     </motion.div>
   )
