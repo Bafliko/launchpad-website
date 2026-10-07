@@ -8,7 +8,10 @@ describe('Hero', () => {
     expect(
       screen.getByRole('heading', { name: /ultimate tool for everyday work/i })
     ).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: /download for windows/i })).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: /download for windows/i })).toHaveAttribute(
+      'href',
+      'https://github.com/Bafliko/launchpad-releases/releases/latest/download/LaunchPad-Setup.exe'
+    )
   })
 
   it('isolates its own stacking context so the negative-z glow renders above the page background', () => {

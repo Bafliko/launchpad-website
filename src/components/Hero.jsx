@@ -34,13 +34,12 @@ export default function Hero() {
         className="mt-10"
       >
         <BouncyButton
-          href="#"
+          href="https://github.com/Bafliko/launchpad-releases/releases/latest/download/LaunchPad-Setup.exe"
           className="inline-flex items-center gap-2 rounded-full bg-accent px-8 py-4 font-semibold text-bg shadow-glow-lg hover:shadow-glow-accent transition-shadow"
         >
           {t.download}
         </BouncyButton>
       </motion.div>
-      {/* ponytail: href is a placeholder ("#"); wire to the real installer/checkout URL later */}
     </section>
   )
 }
