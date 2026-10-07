@@ -13,7 +13,7 @@ describe('App', () => {
     expect(screen.getByText('PDF Forge')).toBeInTheDocument()
     expect(screen.getByText('עובד בלי אינטרנט')).toBeInTheDocument()
     expect(screen.getAllByText(/₪9\.99/).length).toBeGreaterThan(0)
-    expect(screen.getByText(/Bafliko/)).toBeInTheDocument()
+    expect(screen.getByText(/איי.סייפטי בטיחות וגיהות בע״מ\. /)).toBeInTheDocument()
   })
 
   it('switches to English and remembers the choice', () => {
